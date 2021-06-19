@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+<link rel="icon" type="image/x-icon" href="https://batuhangurkan.ml/pub/assets/images/coronavirus.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <!--custom css-->
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/492aa02ecb.js" crossorigin="anonymous"></script>
+
+  <title>COVID-19 - Batuhan Gürkan</title>
+</head>
+
+<body>
+
+  <section id="title">
+
+</div>
+    
+  </section>
+
+
+  <section id = "info">
+      <div class="row info-row">
+        <div class="col-lg-8 flex-class">
+          <div class = "title">
+            <p class = 'live'><i class="far fa-dot-circle live-icon"></i> Canlı</p>
+            <h1>COVID-19 Dünya İstatistikleri</h1>
+          </div>
+          <div class="row cards-row">
+            <div class="col-lg-4">
+              <div class="card total-cases">
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item card-body">---</li>
+                  <li class="list-group-item card-footer">Vaka</li> 
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="card total-recovered">
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item card-body">---</li>
+                  <li class="list-group-item card-footer">İyileşen</li>        
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="card total-deaths">
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item card-body">---</li>
+                  <li class="list-group-item card-footer">Ölüm</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="col-lg-4">
+          <h2>Etkilenen Ülkelerdeki İstatistikler</h2>
+          <table class = 'countries-affected'>
+          <thead class = 'countries-affected-head'>
+            <tr>
+              <th>Ülke</th>
+              <th>Vaka Sayısı</th>
+              <th>İyileşen</th>
+              <th>Ölüm</th>
+            </tr>
+          </thead>
+          <tbody class = 'tbody'>
+            
+            <!-- <tr>
+              <td class = "country-name"> <img class = "flag-img" src="https://corona.lmao.ninja/assets/img/flags/us.png" alt=""> country</td>
+              <td>cases</td>
+              <td>recovered</td>
+              <td>${deaths}</td>
+            </tr> -->
+
+          </tbody>
+        </table>
+        <p class="view-all-link"><a href="">Tüm Ülkeleri Gör (yakında)</a></p>
+        </div>
+      </div>
+  </section>
+
+  <section id="country-search">
+    <div class="container">
+      <div class = 'row'>
+        <div class="col-lg-6"></div>
+        <div class="col-lg-6">
+    <!-- <div class="input-group mb-3 search-box">
+      <input type="text" class="form-control search-bar" placeholder="Enter a country" aria-label="Recipient's username" aria-describedby="basic-addon2">
+      <div class="input-group-append">
+        <button class="btn btn-outline-secondary search-btn" type="button">Search</button> -->
+      <div class="search-box">
+          <input class="input-box search-bar" type="text" autocomplete="off" name="" placeholder = "Ülke Girin..."id="search-input">
+          <button class = 'search-btn'><i class="fas fa-search"></i></button>
+      </div>        
+        
+      </div>
+    </div>
+
+    <!-- Search results -->
+    <div class = "search-results-div row hidden">
+      <div class="col">
+        <h3>Türkiye</h3>
+        <div class="row">
+          <div class="col-lg-2 col-md-6 col-sm-6">
+            <div class="card total-cases country-total-cases">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item card-body">---</li>
+                <li class="list-group-item card-footer">Confirmed</li> 
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-6 col-sm-6">
+            <div class="card total-recovered country-total-recovered">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item card-body">---</li>
+                <li class="list-group-item card-footer">Recovered</li>        
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-6 col-sm-6">
+            <div class="card total-deaths country-total-deaths">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item card-body">---</li>
+                <li class="list-group-item card-footer">Deaths</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-6 col-sm-6">
+            <div class="card total-tests country-total-tests">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item card-body">---</li>
+                <li class="list-group-item card-footer">Tests</li> 
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-6 col-sm-6">
+            <div class="card cases-today country-cases-today">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item card-body">---</li>
+                <li class="list-group-item card-footer">Cases Today</li>        
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-6 col-sm-6">
+            <div class="card deaths-today country-deaths-today">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item card-body">---</li>
+                <li class="list-group-item card-footer">Deaths today</li>
+              </ul>
+            </div>
+          </div>
+      </div>
+      </div> 
+      
+    </div>
+    <div class = 'search-catch hidden'>
+      <p>Görünüşe göre bilgiyi bulamadık :/</p>
+    </div>
+    
+</div>
+    
+</section>
+
+<div class = 'footer-svg' style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-65.18,-27.13 C151.52,285.69 156.59,-130.75 565.74,138.64 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #120136;"></path></svg></div>
+<section>
+  <footer>
+    <div class="container footer-container">
+      <div class="row">
+        <div class ='col-lg-4 footer-line copyright-line'> <p> © 2021 <a href="https://batuhangurkan.ml">Batuhan Gürkan</a></p></div>
+        <div class ='col-lg-4 footer-line tag-line'><p>Stay Home, Stay Safe!</p></div>
+        <div class ='col-lg-4 footer-line social-line'><a href="https://github.com/Batuhan1086"><i class="fab fa-github social-icons"></i></a><a href="https://instagram.com/bthn_grkn"><i class="fab fa-instagram social-icons"></i></a><a href="https://contact.batuhangurkan.ml"><i class="far fa-envelope social-icons"></i></a></div>
+      </div>
+    </div>
+  </footer>
+</section>
+  <script src="index.js" charset="utf-8"></script>
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+
+</html>

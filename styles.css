@@ -1,0 +1,393 @@
+a{
+  color: #ffe6a2;
+}
+a:hover{
+  color: #fcbf1e;
+  text-decoration: none;
+}
+.hidden{
+  display:none;
+}
+body{
+  background-color: #f4eeff;
+}
+
+/*************** navbar *****************/
+.navbar{
+  background-color: #120136;
+}
+.navbar-brand{
+  color: #fcbf1e !important;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.nav-link{
+  color:#ffe6a2 !important;
+}
+.nav-link:hover{
+  color:#fcbf1e !important;
+}
+
+.search-bar{
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.title{
+  
+}
+.live{
+  text-align: left;
+  padding: 0 0 0 15px;
+  color: #E53E3E;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+#info{
+  margin-top: 20px;
+  text-align: center;
+  padding: 0 2%;
+  display: flex;
+  justify-content: center;
+}
+.info-row{
+  width: 100%;
+}
+.title{
+  width: 100%;
+}
+h1{
+  text-align: left;
+  padding-left: 15px;
+}
+.flex-class{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.cards-row{
+  width: 100%;
+}
+.card{
+  box-shadow: 0 0 12px 2px rgba(0, 0, 0, 0.1);
+  border-width: 0;
+  margin: 40px 0 40px 0;
+}
+.card li{
+  text-align: center;
+}
+.card-body{
+  font-size: 2rem;
+  font-weight: 700;
+  border-width: 0;
+}
+.card-footer{
+  border-width: 0;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.total-cases .card-body{
+  background-color: #FFF5F5;
+  color: #E53E3E;
+}
+.total-cases .card-footer{
+  background-color: #FFFFFF;
+  color: #E53E3E;
+}
+.total-recovered .card-body{
+  background-color: #F0FFF4;
+  color: #38A169;
+}
+.total-recovered .card-footer{
+  background-color: #FFFFFF;
+  color: #38A169;
+}
+.total-deaths .card-body{
+  background-color: #EDF2F7;
+  color: #718096;
+}
+.total-deaths .card-footer{
+  background-color: #FFFFFF;
+  color: #718096;
+}
+/* new cards */
+
+#country-search .card-body{
+  font-size: 1.5rem;
+}
+
+.total-tests .card-body{
+  background-color: rgb(238, 255, 254);
+  color: rgb(35, 226, 226);
+}
+.total-tests .card-footer{
+  background-color: rgb(248, 255, 255);
+  color: rgb(35, 226, 226);
+}
+.cases-today .card-body{
+  background-color: rgb(255, 239, 214);
+  color: #ff912b;
+}
+.cases-today .card-footer{
+  background-color: rgb(255, 251, 248);
+  color: #ff912b;
+}
+.deaths-today .card-body{
+  background-color: rgb(255, 237, 250);
+  color: #e74bdf;
+}
+.deaths-today .card-footer{
+  background-color: #FFFFFF;
+  color: #e74bdf;
+}
+
+
+
+
+/**********************Table*****************/
+
+.countries-affected{
+  width: 100%;
+}
+
+
+.even-table{
+  background-color: #f4eeff;
+}
+.odd-table{
+  background-color: #dcd6f7;
+}
+.view-all-link{
+  text-align: right;
+  padding-right: 10px;
+  padding-top: 10px;
+}
+.flag-img{
+  width: 25px;
+}
+.country-name{
+  text-align: left;
+  padding-left: 10px;
+}
+
+/***********search****************/
+
+#country-search{
+  background-color: #dcd6f7;
+}
+/* .search-btn{
+  background-color: green;
+}
+.search-btn:hover{
+  background-color: blue;
+}
+
+.search-box{
+  padding: 10px 30px;
+  margin: 16px 0;
+} */
+.search-box{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  
+}
+.input-box{
+  width: 90%;
+  border: white;
+  padding: 10px 80px 10px 20px;
+  border-radius: 20px;
+}
+.input-box:focus{
+  border-style: none;
+}
+
+.search-btn{
+  position: absolute;
+  top: 17px;
+  height: 30px;
+  width: 40px;
+  right: 75px;
+  background-color: transparent;
+  border-style: solid;
+  border-radius: 20px;
+  border: transparent;
+  transition: 0.3s;
+  
+}
+.search-btn:focus{
+  outline: none;
+}
+.search-btn:hover{
+  background-color: #ffe6a2;
+}
+.search-btn:active{
+  background-color: #fcbf1e;
+}
+/***********infographics************************/
+.infographics-title{
+  color: white;
+  margin-top: 0;
+  background-color: #120136;
+  position: relative;
+}
+.infographics-title h1{
+  font-size: 6rem;
+  padding: 2% 15%;
+  width: 80%;
+  display: inline-block;
+  position: relative;
+  z-index: 2;
+}
+
+.infographics-title img{
+  width: 20%;
+  display: inline-block;
+  position: absolute;
+  bottom: 10%;
+  right: 0;
+  opacity: 25%;
+}
+
+@media (max-width: 992px){
+  .infographics-title img{
+    width: 30%;
+  }
+}
+
+@media (max-width: 768px){
+  
+  .infographics-title h1{
+    font-size: 3rem;
+  }
+}
+
+#infographics-content{
+  text-align: center;
+}
+
+#infographics-content .container{
+  width: 75%;
+}
+#infographics-content p{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#infographics-content img{
+  border-radius: 50%;
+  height: 180px;
+}
+
+#infographics-content .col{
+  margin-top: 50px;
+}
+#infographics-content-2 p{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.infographics-title-2{
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.infographics-title-2 p{
+  font-size: 1.5rem;
+}
+.infographics-content-2 p{
+  font-size: 1.5rem;
+  margin-bottom: 0;
+}
+.infographics-title.infographics-title-2 h1{
+  padding: 0 0;
+  font-weight: 700;
+  text-align: center;
+}
+
+#infographics-content-2{
+  text-align: center;
+}
+
+#infographics-content-2 .container{
+  width: 75%;
+}
+
+#infographics-content-2 img{
+  border-radius: 50%;
+  height: 180px;
+}
+
+#infographics-content-2 .col{
+  margin-top: 50px;
+}
+#infographics-content-2 p{
+  margin-top: 20px;
+}
+.semi-title{
+  font-size: 1.5rem;
+}
+
+/************footer*****************/
+footer{
+  background-color: #120136;
+  color: white;
+}
+.footer-svg{
+  height: 50%;
+}
+.tag-line{
+  text-align: center;
+}
+.social-line{
+  color: ;
+  text-align: right;
+}
+.social-icons{
+  padding: 20px 10px;
+  font-size: 1.5rem;
+  transition: 0.3s;
+}
+.copyright-line{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.copyright-line p{
+  margin: 0 0;
+  padding: 20px 20px;
+}
+.tag-line{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tag-line p{
+  margin: 0 0;
+  padding: 20px 20px;
+  font-size: 1.5rem;
+}
+.footer-container{
+  width: 100%;
+}
+ @media only screen and (max-width: 768px) {
+  .copyright-line{
+      order: 2;
+  }
+  .tag-line{
+      order: 1;
+  }
+  .social-line{
+      order: 3;
+      display: flex;
+      justify-content: center;
+  }
+  .card{
+    box-shadow: 0 0 12px 2px rgba(0, 0, 0, 0.1);
+    border-width: 0;
+    margin: 20px 0 20px 0;
+  }
+  
+}
